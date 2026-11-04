@@ -564,12 +564,11 @@ Erweitert euren Job:
 
 ```yaml
   quality:
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         python-version: ["3.12", "3.13"]
-
-    runs-on: ubuntu-latest
 ```
 
 Jetzt muss `setup-uv` wissen, welche Python-Version der jeweilige Matrix-Lauf verwenden soll:
